@@ -4,7 +4,6 @@ public abstract class BusinessEntity : EntityBase
 {
     public enum BusinessEntityType
     {
-        Unknown,
         Customer,
         Supplier,
     }
@@ -13,7 +12,7 @@ public abstract class BusinessEntity : EntityBase
     {
     }
     
-    public BusinessEntity() : base(Guid.NewGuid())
+    protected BusinessEntity() : base(Guid.NewGuid())
     {
     }
     
